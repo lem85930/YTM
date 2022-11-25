@@ -257,14 +257,23 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=-5ajVJ1Yxlg)
         EOL
-    - name: Get AnimalOfTheWorld.m3u8
+    - name: Get 东森娱乐live.m3u8
       run: |
-        touch ./AnimalOfTheWorld.m3u8
-        sudo cat >./AnimalOfTheWorld.m3u8 <<EOL
+        touch ./东森娱乐live.m3u8
+        sudo cat >./东森娱乐live.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/watch?v=Ami60fVO5-8)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=YacyMIDrIN4&list=PLU12uITxBEPFJGVb2zSgCaWvMBe7vHonB&index=70)
+        EOL
+    - name: Get 中视综艺live.m3u8
+      run: |
+        touch ./中视综艺live.m3u8
+        sudo cat >./东森娱乐live.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=ADDSmXoPDY8&list=PLU12uITxBEPFJGVb2zSgCaWvMBe7vHonB&index=77)
         EOL
     - name: Get FlyingOverIsland.m3u8
       run: |
