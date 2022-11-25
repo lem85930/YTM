@@ -122,68 +122,86 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=QTz6avPD4Ns)
         EOL
-    - name: Get LocoNutsCartoonVideos.m3u8
+    - name: Get 东森财经新闻.m3u8
       run: |
-        touch ./LocoNutsCartoonVideos.m3u8
-        sudo cat >./LocoNutsCartoonVideos.m3u8 <<EOL
+        touch ./东森财经新闻.m3u8
+        sudo cat >./东森财经新闻.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/LocoNutsCartoonVideos/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=LbS-xQ67fos)
         EOL
-    - name: Get GetMovies.m3u8
+    - name: Get NovemberChillMix.m3u8
       run: |
-        touch ./GetMovies.m3u8
-        sudo cat >./GetMovies.m3u8 <<EOL
+        touch ./NovemberChillMix.m3u8
+        sudo cat >./NovemberChillMix.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/getmovies/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=6SygqGFPmIE)
         EOL
-    - name: Get BabySharkOfficial.m3u8
+    - name: Get RainingDayCoffee.m3u8
       run: |
-        touch ./BabySharkOfficial.m3u8
-        sudo cat >./BabySharkOfficial.m3u8 <<EOL
+        touch ./RainingDayCoffee.m3u8
+        sudo cat >./RainingDayCoffee.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/BabySharkOfficial/live)
+        $(yt-dlp --print urls ttps://www.youtube.com/watch?v=bdiQ48RNbtI)
         EOL
-    - name: Get TalkingTomHeroes.m3u8
+    - name: Get JazzCovers.m3u8
       run: |
-        touch ./TalkingTomHeroes.m3u8
-        sudo cat >./TalkingTomHeroes.m3u8 <<EOL
+        touch ./JazzCovers.m3u8
+        sudo cat >./JazzCovers.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/TalkingTomHeroes/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=oeivPcRHp-k)
         EOL
-    - name: Get BoobaCartoon.m3u8
+    - name: Get RadioHitsMusic.m3u8
       run: |
-        touch ./BoobaCartoon.m3u8
-        sudo cat >./BoobaCartoon.m3u8 <<EOL
+        touch ./RadioHitsMusic.m3u8
+        sudo cat >./RadioHitsMusic.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/BoobaCartoon/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=HQtFR3mhzOY)
         EOL
-    - name: Get OkoLeleOfficialchannel.m3u8
+    - name: Get 1022年经典歌曲.m3u8
       run: |
-        touch ./OkoLeleOfficialchannel.m3u8
-        sudo cat >./OkoLeleOfficialchannel.m3u8 <<EOL
+        touch ./1022年经典歌曲.m3u8
+        sudo cat >./1022年经典歌曲.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/OkoLeleOfficialchannel/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=aGKLoc1BVsA)
         EOL
-    - name: Get arirangworld.m3u8
+    - name: Get 那些年我们听过的歌.m3u8
       run: |
-        touch ./arirangworld.m3u8
-        sudo cat >./arirangworld.m3u8 <<EOL
+        touch ./那些年我们听过的歌.m3u8
+        sudo cat >./那些年我们听过的歌.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/arirangworld/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=ppe-FdN1SLo)
+        EOL
+    - name: Get 网路流行音乐电台.m3u8
+      run: |
+        touch ./网路流行音乐电台.m3u8
+        sudo cat >./网路流行音乐电台.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@2olive153/live)
+        EOL
+    - name: Get GoodVibes.m3u8
+      run: |
+        touch ./GoodVibes.m3u8
+        sudo cat >./GoodVibes.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@EnglishSongCollection/live)
         EOL
     - name: Get ALLTHEKPOP.m3u8
       run: |
