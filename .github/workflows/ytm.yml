@@ -86,41 +86,41 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=B7Zp3d6xXWw)
         EOL
-    - name: Get OddbodsFRIENDS.m3u8
+    - name: Get 关键时刻.m3u8
       run: |
-        touch ./OddbodsFRIENDS.m3u8
-        sudo cat >./OddbodsFRIENDS.m3u8 <<EOL
+        touch ./关键时刻.m3u8
+        sudo cat >./关键时刻.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/OddbodsFRIENDS/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=cs0evoZXqfY)
         EOL
-    - name: Get CANDYCRUSH.m3u8
+    - name: Get 中天新闻2.m3u8
       run: |
-        touch ./CANDYCRUSH.m3u8
-        sudo cat >./CANDYCRUSH.m3u8 <<EOL
+        touch ./中天新闻2.m3u8
+        sudo cat >./中天新闻2.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/RussianAnimationTV/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=WPfPjbOLNfE&list=PLU12uITxBEPFJGVb2zSgCaWvMBe7vHonB&index=76)
         EOL
-    - name: Get HOGI.m3u8
+    - name: Get 凤凰资讯台.m3u8
       run: |
-        touch ./HOGI.m3u8
-        sudo cat >./HOGI.m3u8 <<EOL
+        touch ./凤凰资讯台.m3u8
+        sudo cat >./凤凰资讯台.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/HOGI/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=xyyvJ_KgTlg)
         EOL
-    - name: Get AntiksOfficial.m3u8
+    - name: Get CCTV中文国际.m3u8
       run: |
-        touch ./AntiksOfficial.m3u8
-        sudo cat >./AntiksOfficial.m3u8 <<EOL
+        touch ./CCTV中文国际.m3u8
+        sudo cat >./CCTV中文国际.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/AntiksOfficial/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=QTz6avPD4Ns)
         EOL
     - name: Get LocoNutsCartoonVideos.m3u8
       run: |
