@@ -138,7 +138,7 @@ jobs:
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/watch?v=6SygqGFPmIE)
+        $(yt-dlp --print urls https://www.youtube.com/channel/UCsZwtnc5aoVU9Lk9F3BXP9Q/live)
         EOL
     - name: Get RainingDayCoffee.m3u8
       run: |
@@ -166,6 +166,15 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=HQtFR3mhzOY)
+        EOL
+    - name: Get RadioHitsMusic2.m3u8
+      run: |
+        touch ./RadioHitsMusic2.m3u8
+        sudo cat >./RadioHitsMusic2.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=uNd5kvrGHjk)
         EOL
     - name: Get 1022年经典歌曲.m3u8
       run: |
@@ -229,6 +238,24 @@ jobs:
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/c/TheKPOP2/live)
+        EOL
+    - name: GetPrizeSleepSleepingMusic.m3u8
+      run: |
+        touch ./GetPrizeSleepSleepingMusic.m3u8
+        sudo cat >./GetPrizeSleepSleepingMusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=a9hDIX8PSuI)
+        EOL
+    - name: Get RelaxingPianoMusic.m3u8
+      run: |
+        touch ./RelaxingPianoMusic.m3u8
+        sudo cat >./RelaxingPianoMusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=-5ajVJ1Yxlg)
         EOL
     - name: Get CafeMusicBGMchannel.m3u8
       run: |
