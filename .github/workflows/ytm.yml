@@ -284,6 +284,15 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=1ovvjWQ3aZE)
         EOL
+    - name: Get BeautifulNature.m3u8
+      run: |
+        touch ./BeautifulNature.m3u8
+        sudo cat >./BeautifulNature.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=OX4XGMifSv8)
+        EOL
     - name: Get CafeMusicBGMchannel.m3u8
       run: |
         touch ./CafeMusicBGMchannel.m3u8
