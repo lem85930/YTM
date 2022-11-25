@@ -23,23 +23,23 @@ jobs:
         sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
         sudo chmod a+rx /usr/local/bin/yt-dlp
 
-    - name: Get PeppaPig.m3u8
+    - name: Get 中天新闻.m3u8
       run: |
-        touch ./PeppaPig.m3u8
-        sudo cat >./PeppaPig.m3u8 <<EOL
+        touch ./中天新闻.m3u8
+        sudo cat >./中天新闻.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/channel/UCRi0sw4PDw-C2C7fS9hrx5Q/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=_QbRXRnHMVY)
         EOL
-    - name: Get LionFamily.m3u8
+    - name: Get 台视新闻.m3u8
       run: |
-        touch ./LionFamily.m3u8
-        sudo cat >./LionFamily.m3u8 <<EOL
+        touch ./台视新闻.m3u8
+        sudo cat >./台视新闻.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/VexTrex/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=xL0ch83RAK8)
         EOL
     - name: Get LionFamily2.m3u8
       run: |
