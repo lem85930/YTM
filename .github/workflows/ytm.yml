@@ -302,32 +302,32 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=f7-uxDG2xfc)
         EOL
-    - name: Get CafeMusicBGMchannel.m3u8
+    - name: Get HitFM北部.m3u8
       run: |
-        touch ./CafeMusicBGMchannel.m3u8
-        sudo cat >./CafeMusicBGMchannel.m3u8 <<EOL
+        touch ./HitFM北部.m3u8
+        sudo cat >./HitFM北部.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/cafemusicbgmchannel/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=hyWJfzXHaww)
         EOL
-    - name: Get GreenMusicBGMchannel.m3u8
+    - name: Get HitFM南部.m3u8
       run: |
-        touch ./GreenMusicBGMchannel.m3u8
-        sudo cat >./GreenMusicBGMchannel.m3u8 <<EOL
+        touch ./HitFM南部.m3u8
+        sudo cat >./HitFM南部.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/japanrelaxingmusic/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=9336PvtcV7Q)
         EOL
-    - name: Get HawaiianMusicBGMchannel.m3u8
+    - name: Get HITZ.m3u8
       run: |
-        touch ./HawaiianMusicBGMchannel.m3u8
-        sudo cat >./HawaiianMusicBGMchannel.m3u8 <<EOL
+        touch ./HITZ.m3u8
+        sudo cat >./HITZ.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/HawaiianBGMchannel/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=JpsAE2Hy5Yk)
         EOL
     - name: Get NatureRelax4K.m3u8
       run: |
