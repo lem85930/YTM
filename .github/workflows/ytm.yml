@@ -347,32 +347,32 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/c/RELAXTIME0/live)
         EOL
-    - name: Get RailWay.m3u8
+    - name: Get 8FM线上收听.m3u8
       run: |
-        touch ./RailWay.m3u8
-        sudo cat >./RailWay.m3u8 <<EOL
+        touch ./8FM线上收听.m3u8
+        sudo cat >./8FM线上收听.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/channel/UCP8wWzfUcral_E6iNMdIdKg/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=D4kz2MHsgyA)
         EOL
-    - name: Get RailCowGirl.m3u8
+    - name: Get FlyFM.m3u8
       run: |
-        touch ./RailCowGirl.m3u8
-        sudo cat >./RailCowGirl.m3u8 <<EOL
+        touch ./FlyFM.m3u8
+        sudo cat >./FlyFM.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/RailCowGirl/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=YF9Y9eb7zz8)
         EOL
-    - name: Get ctsprog.m3u8
+    - name: Get MIX.m3u8
       run: |
-        touch ./ctsprog.m3u8
-        sudo cat >./ctsprog.m3u8 <<EOL
+        touch ./MIX.m3u8
+        sudo cat >./MIX.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/c/ctsprog/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=6ZKr9gQLbuc)
         EOL
     - name: Get GTVDRAMA.m3u8
       run: |
