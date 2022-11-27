@@ -329,14 +329,14 @@ jobs:
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
         $(yt-dlp --print urls https://www.youtube.com/watch?v=JpsAE2Hy5Yk)
         EOL
-    - name: Get NatureRelax4K.m3u8
+    - name: Get ERAMuzikHitTerkini.m3u8
       run: |
-        touch ./NatureRelax4K.m3u8
-        sudo cat >./NatureRelax4K.m3u8 <<EOL
+        touch ./ERAMuzikHitTerkini.m3u8
+        sudo cat >./ERAMuzikHitTerkini.m3u8 <<EOL
         #EXTM3U
         #EXT-X-VERSION:3
         #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-        $(yt-dlp --print urls https://www.youtube.com/channel/UC80oBMhAYgvV5bCWXs-xCUA/live)
+        $(yt-dlp --print urls https://www.youtube.com/watch?v=ZX71Vgg9JD4)
         EOL
     - name: Get RELAXTIME0.m3u8
       run: |
